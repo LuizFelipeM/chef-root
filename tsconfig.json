@@ -1,6 +1,6 @@
 {
   "extends": "ts-config-single-spa",
-  "files": ["src/LuizFelipeM-root-config.ts"],
+  "files": ["src/Chef-root-config.ts"],
   "compilerOptions": {
     "declarationDir": "dist"
   },

@@ -1,3 +1,4 @@
+import "./index.css"
 import { registerApplication, start } from "single-spa";
 import {
   constructApplications,
