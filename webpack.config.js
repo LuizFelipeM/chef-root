@@ -33,21 +33,5 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       }),
     ],
-    module: {
-      rules: [
-        {
-          test: /\.css$/i,
-          use: [
-            require.resolve("style-loader", {
-              paths: [require.resolve("webpack-config-single-spa")],
-            }),
-            require.resolve("css-loader", {
-              paths: [require.resolve("webpack-config-single-spa")],
-            }),
-            "postcss-loader",
-          ],
-        },
-      ],
-    },
   });
 };

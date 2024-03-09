@@ -16,10 +16,16 @@
   </route>
 
   -->
-
   <main>
-    <route default>
-      <application name="@Chef/list"></application>
-    </route>
+    <application name="@Chef/searchbar"></application>
+
+    <div class="container my-5">
+      <route path="search/:term">
+        <application name="@Chef/list"></application>
+      </route>
+      <!-- <route path="recipe/:id">
+        <application name="@Chef/list"></application>
+      </route> -->
+    </div>
   </main>
 </single-spa-router>
