@@ -45,7 +45,8 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "single-spa": "^5.9.3",
-    "single-spa-layout": "^1.6.0"
+    "single-spa-layout": "^1.6.0",
+    "zone.js": "^0.14.4"
   },
   "types": "dist/Chef-root-config.d.ts"
 }
