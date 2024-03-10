@@ -1,21 +1,4 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
   <main>
     <application name="@Chef/searchbar"></application>
 
@@ -26,6 +9,10 @@
 
       <route path="recipe/:id">
         <application name="@Chef/recipe"></application>
+      </route>
+
+      <route default>
+        <application name="@Chef/carousel"></application>
       </route>
     </div>
   </main>
