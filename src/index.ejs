@@ -52,6 +52,9 @@
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
+  <!-- Svelte app extra css for svelte-splide bundled -->
+  <link rel="stylesheet" href="//localhost:9006/public/build/vendor.css" />
+
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
@@ -66,7 +69,7 @@
         "@Chef/list": "//localhost:9001/Chef-list.js",
         "@Chef/searchbar": "//localhost:9004/js/app.js",
         "@Chef/recipe": "//localhost:9005/main.js",
-        "@Chef/carousel": "//localhost:5000/Chef-carousel.js"
+        "@Chef/carousel": "//localhost:9006/Chef-carousel.js"
       }
     }
   </script>
@@ -86,8 +89,6 @@
           <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
           <% } %>
-
-            <link rel="stylesheet" href="//localhost:5000/public/build/vendor.css" />
 </head>
 
 <body>
