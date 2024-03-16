@@ -7,25 +7,7 @@ import {
 import microfrontendLayout from "./microfrontend-layout.html";
 import "zone.js";
 
-const htmlLayoutData = {
-  props: {
-    items: [
-      {
-        id: 1,
-        name: "Potato"
-      },
-      {
-        id: 2,
-        name: "Lettuce"
-      }
-    ]
-  },
-  loaders: {
-    spaLoader: `<div class="spa-loader-wrap"><span class="spa-loader">Load&nbsp;ng</span></div>`,
-  }
-}
-
-const routes = constructRoutes(microfrontendLayout, htmlLayoutData);
+const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
