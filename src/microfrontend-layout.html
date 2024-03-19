@@ -1,18 +1,18 @@
 <single-spa-router>
-  <main>
+  <main style="background-color: #f9f9f9;">
     <application name="@Chef/searchbar"></application>
 
-    <div class="container my-5">
+    <div class="container-fluid my-5">
+      <route default>
+        <application name="@Chef/home"></application>
+      </route>
+
       <route path="search/:term">
         <application name="@Chef/search"></application>
       </route>
 
       <route path="recipe/:id">
         <application name="@Chef/recipe"></application>
-      </route>
-
-      <route default>
-        <application name="@Chef/carousel"></application>
       </route>
     </div>
   </main>
