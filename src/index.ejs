@@ -64,7 +64,6 @@
     <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@Chef/root-config": "//localhost:9000/Chef-root-config.js",
         "@Chef/styleguide": "//localhost:9002/index.js",
         "@Chef/utility": "//localhost:9003/Chef-utility.js",
@@ -76,22 +75,25 @@
       }
     }
   </script>
-    <% } %>
+    <% } else { %>
+      <script type="systemjs-importmap"
+        src="https://raw.githubusercontent.com/LuizFelipeM/chef-root/master/importmap.json"></script>
+      <% } %>
 
-      <!--
+        <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
   -->
-      <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/zone.js@0.14.4/dist/zone.min.js"></script>
 
-      <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
-      <% if (isLocal) { %>
-        <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
-        <% } else { %>
-          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
-          <% } %>
+        <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
+        <% if (isLocal) { %>
+          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+          <% } else { %>
+            <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+            <% } %>
 </head>
 
 <body>

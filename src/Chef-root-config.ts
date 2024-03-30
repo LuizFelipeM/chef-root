@@ -5,7 +5,6 @@ import {
   constructLayoutEngine,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
-import "zone.js";
 
 const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({
