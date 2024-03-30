@@ -1,5 +1,10 @@
 <h1 align="center">
-    <img src="https://raw.githubusercontent.com/LuizFelipeM/chef-root/master/src.assets/bowl-food-solid.svg" />
+    <img
+        width="35"
+        alt="bowl food solid"
+        title="bowl food solid"
+        src="https://raw.githubusercontent.com/LuizFelipeM/chef-root/master/src/assets/bowl-food-solid.svg"
+    />
     Chef Root - Single-SPA Root
 </h1>
 
