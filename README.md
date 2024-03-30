@@ -8,7 +8,7 @@
     Chef Root - Single-SPA Root
 </h1>
 
-<h2 align="center">A project created by the passion to learn <a href="#technologies">techonology</a> and new recipes.</h2>
+This project was created to learn a set of [techonologies](#technologies). They are implemented just for fund in a recipes search website called Chef.
 
 This repository is the Single-SPA Root Application responsible for managing the 7 other Single-SPA Applications that can be found on its own [repositories](#applications) and together they make up an application composed by microfrontends.
 
