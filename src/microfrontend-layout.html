@@ -4,15 +4,15 @@
   <main>
     <div class="container py-5">
       <route default>
-        <application name="@Chef/home"></application>
+        <application name="@Chef/home" error="errorTemplate"></application>
       </route>
 
       <route path="search/:term">
-        <application name="@Chef/search"></application>
+        <application name="@Chef/search" error="errorTemplate"></application>
       </route>
 
       <route path="recipe/:id">
-        <application name="@Chef/recipe"></application>
+        <application name="@Chef/recipe" error="errorTemplate"></application>
       </route>
     </div>
   </main>
