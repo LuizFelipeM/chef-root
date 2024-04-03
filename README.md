@@ -5,7 +5,7 @@
         title="bowl food solid"
         src="https://raw.githubusercontent.com/LuizFelipeM/chef-root/master/src/assets/bowl-food-solid.svg"
     />
-    Chef Root - Single-SPA Root
+    Cheff Root - Single-SPA Root
 </h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/575bd421-00ec-4f19-84eb-81da497d049e/deploy-status)](https://app.netlify.com/sites/cheffhub/deploys)
