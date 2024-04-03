@@ -8,6 +8,8 @@
     Chef Root - Single-SPA Root
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/575bd421-00ec-4f19-84eb-81da497d049e/deploy-status)](https://app.netlify.com/sites/cheffhub/deploys)
+
 This project was created to learn a set of [techonologies](#technologies). They are implemented just for fun in a recipes search website called Chef.
 
 This repository is the Single-SPA Root Application responsible for managing the 7 other Single-SPA Applications that can be found on its own [repositories](#applications) and together they make up an application composed by microfrontends.
