@@ -54,46 +54,48 @@
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
-  <!-- Svelte app extra css for svelte-splide bundled -->
-  <link rel="stylesheet" href="//localhost:9006/public/build/vendor.css" />
-
-  <!-- Add your organization's prod import map URL to this script's src  -->
-  <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
-
-  <% if (isLocal) { %>
-    <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@Chef/root-config": "//localhost:9000/Chef-root-config.js",
-        "@Chef/styleguide": "//localhost:9002/index.js",
-        "@Chef/utility": "//localhost:9003/Chef-utility.js",
-        "@Chef/search": "//localhost:9001/Chef-search.js",
-        "@Chef/searchbar": "//localhost:9004/js/app.js",
-        "@Chef/recipe": "//localhost:9005/main.js",
-        "@Chef/carousel": "//localhost:9006/Chef-carousel.js",
-        "@Chef/home": "//localhost:9007/Chef-home.js"
-      }
-    }
-  </script>
-    <% } else { %>
-      <script type="systemjs-importmap"
-        src="https://raw.githubusercontent.com/LuizFelipeM/chef-root/master/importmap.json"></script>
-      <% } %>
-
-        <!--
+  <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
   -->
-        <script src="https://cdn.jsdelivr.net/npm/zone.js@0.14.4/bundles/zone.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/zone.js@0.14.4/bundles/zone.umd.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
-        <% if (isLocal) { %>
-          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
-          <% } else { %>
-            <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
-            <% } %>
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
+
+  <% if (isLocal) { %>
+    <!-- Svelte app extra css for svelte-splide bundled -->
+    <link rel="stylesheet" href="https://cheff-carousel.netlify.app/public/build/vendor.css" />
+
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@Chef/root-config": "//localhost:9000/Chef-root-config.js",
+          "@Chef/styleguide": "//localhost:9002/index.js",
+          "@Chef/utility": "//localhost:9003/Chef-utility.js",
+          "@Chef/search": "//localhost:9001/Chef-search.js",
+          "@Chef/searchbar": "//localhost:9004/js/app.js",
+          "@Chef/recipe": "//localhost:9005/main.js",
+          "@Chef/carousel": "//localhost:9006/Chef-carousel.js",
+          "@Chef/home": "//localhost:9007/Chef-home.js"
+        }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+
+    <% } else { %>
+
+      <!-- Svelte app extra css for svelte-splide bundled -->
+      <link rel="stylesheet" href="//localhost:9006/public/build/vendor.css" />
+
+      <!-- Add your organization's prod import map URL to this script's src  -->
+      <script type="systemjs-importmap"
+        src="https://raw.githubusercontent.com/LuizFelipeM/chef-root/master/importmap.json"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+      <% } %>
 </head>
 
 <body>
